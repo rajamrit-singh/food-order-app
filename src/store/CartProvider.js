@@ -30,8 +30,8 @@ const CartProvider = props => {
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
-    addItem: () => addItemToCartHandler,
-    retmoveItem: () => removeItemFromCartHandler
+    addItem: addItemToCartHandler,
+    retmoveItem: removeItemFromCartHandler
   }
 
   return <CartContext.Provider value={cartContext}>
